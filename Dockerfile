@@ -19,9 +19,6 @@ RUN apt-get update \
 
 COPY package.json .
 RUN yarn install
-# COPY yarn.lock .
-
-# RUN yarn install --frozen-lockfile
 
 COPY . .
 
